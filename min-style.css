@@ -1,0 +1,163 @@
+:root {
+    --ddml-text-stroke      : 2px;
+    --ddml-text-stroke-color: white;
+
+    --ddml-color-default : #5f6368;
+    --ddml-color-notice  : rgb(70, 130, 180);
+    --ddml-color-success : rgb(60, 180, 120);
+    --ddml-color-warning : rgb(180, 140, 10);
+    --ddml-color-error   : rgb(200, 90, 90);
+    --ddml-color-disabled: silver;
+}
+
+@font-face {
+    font-family: 'DDMLIcons';
+    src: url('normal/font.eot');
+    src: url('normal/font.eot#iefix') format('embedded-opentype'),
+         url('normal/font.woff2') format('woff2'),
+         url('normal/font.woff') format('woff'),
+         url('normal/font.ttf') format('truetype'),
+         url('normal/font.svg#ddmlicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DDMLIcons';
+    src: url('half/font.eot');
+    src: url('half/font.eot#iefix') format('embedded-opentype'),
+         url('half/font.woff2') format('woff2'),
+         url('half/font.woff') format('woff'),
+         url('half/font.ttf') format('truetype'),
+         url('half/font.svg#ddmliconshalf') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DDMLIcons';
+    src: url('bold/font.eot');
+    src: url('bold/font.eot#iefix') format('embedded-opentype'),
+         url('bold/font.woff2') format('woff2'),
+         url('bold/font.woff') format('woff'),
+         url('bold/font.ttf') format('truetype'),
+         url('bold/font.svg#ddmliconsbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DDMLIconsSymbols';
+    src: url('symbols/font.eot');
+    src: url('symbols/font.eot#iefix') format('embedded-opentype'),
+         url('symbols/font.woff2') format('woff2'),
+         url('symbols/font.woff') format('woff'),
+         url('symbols/font.ttf') format('truetype'),
+         url('symbols/font.svg#ddmliconssymbols') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+[class^="ddml-icon-"], [class*=" ddml-icon-"],
+[class^="ddml-ding-"], [class*=" ddml-ding-"] {
+    display: inline-block; width: 1.2em; height: 1.2em;
+    position: relative; overflow: hidden;
+    font: 32px "DDMLIcons", monospace; line-height: 1.2em;
+    font-variant: normal; text-transform: none; text-decoration: none;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ddml-icon-sym-"]:before, [class*=" ddml-icon-sym-"]:before,
+[class^="ddml-ding-sym-"]:after , [class*=" ddml-ding-sym-"]:after {
+    font-family: "DDMLIconsSymbols", monospace;
+}
+
+[class^="ddml-icon-"]:before, [class*=" ddml-icon-"]:before {
+    display: block; width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    text-align: center; content: '';
+}
+
+[class^="ddml-ding-"]:after, [class*=" ddml-ding-"]:after,
+[class^="ddml-m-"]:after   , [class*=" ddml-m-"]:after {
+    display: block; width: 1em; height: 1em; margin: -.5em;
+    position: absolute; right: .5em; bottom: .5em;
+    font-size: .5em; line-height: 1em; text-align: center; content: '';
+    text-shadow:
+            var(--ddml-text-stroke) 0 var(--ddml-text-stroke-color),
+            calc(var(--ddml-text-stroke) * -1) 0 var(--ddml-text-stroke-color),
+            0 var(--ddml-text-stroke) var(--ddml-text-stroke-color),
+            0 calc(var(--ddml-text-stroke) * -1) var(--ddml-text-stroke-color),
+            calc(var(--ddml-text-stroke) / 2) calc(var(--ddml-text-stroke) / 2) var(--ddml-text-stroke-color),
+            calc(var(--ddml-text-stroke) / -2) calc(var(--ddml-text-stroke) / -2) var(--ddml-text-stroke-color),
+            calc(var(--ddml-text-stroke) / 2) calc(var(--ddml-text-stroke) / -2) var(--ddml-text-stroke-color),
+            calc(var(--ddml-text-stroke) / -2) calc(var(--ddml-text-stroke) / 2) var(--ddml-text-stroke-color);
+}
+
+.ddml-filled-icon:before, .ddml-filled-ding:after { font-weight: bold; }
+.ddml-half-icon:before  , .ddml-half-ding:after   { font-weight: 500; }
+
+.ddml-pos-top:after    { top: .5em; bottom: auto; }
+.ddml-pos-middle:after { right: 50%; bottom: 50%; }
+
+.ddml-orientation-icon-ne:before { -webkit-transform: rotate(45deg);  transform: rotate(45deg); }
+.ddml-orientation-icon-e:before  { -webkit-transform: rotate(90deg);  transform: rotate(90deg); }
+.ddml-orientation-icon-se:before { -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+.ddml-orientation-icon-s:before  { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.ddml-orientation-icon-sw:before { -webkit-transform: rotate(225deg); transform: rotate(225deg); }
+.ddml-orientation-icon-w:before  { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+.ddml-orientation-icon-nw:before { -webkit-transform: rotate(315deg); transform: rotate(315deg); }
+.ddml-orientation-icon-n:before  { -webkit-transform: rotate(0deg);   transform: rotate(0deg); }
+
+.ddml-orientation-ding-ne:after { -webkit-transform: rotate(45deg);  transform: rotate(45deg); }
+.ddml-orientation-ding-e:after  { -webkit-transform: rotate(90deg);  transform: rotate(90deg); }
+.ddml-orientation-ding-se:after { -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+.ddml-orientation-ding-s:after  { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.ddml-orientation-ding-sw:after { -webkit-transform: rotate(225deg); transform: rotate(225deg); }
+.ddml-orientation-ding-w:after  { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+.ddml-orientation-ding-nw:after { -webkit-transform: rotate(315deg); transform: rotate(315deg); }
+.ddml-orientation-ding-n:after  { -webkit-transform: rotate(0deg);   transform: rotate(0deg); }
+
+.ddml-animated-icon:before, .ddml-animated-ding:after {
+    -webkit-animation: ddml_spin 1s infinite linear;
+    animation        : ddml_spin 1s infinite linear;
+}
+
+@-webkit-keyframes ddml_spin {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(359deg); }
+}
+
+@keyframes ddml_spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
+.ddml-color-icon-default:before,
+.ddml-color-ding-default:after  { color: var(--ddml-color-default); }
+.ddml-color-icon-notice:before,
+.ddml-color-ding-notice:after   { color: var(--ddml-color-notice); }
+.ddml-color-icon-success:before,
+.ddml-color-ding-success:after  { color: var(--ddml-color-success); }
+.ddml-color-icon-warning:before,
+.ddml-color-ding-warning:after  { color: var(--ddml-color-warning); }
+.ddml-color-icon-error:before,
+.ddml-color-ding-error:after    { color: var(--ddml-color-error); }
+
+.ddml-state-disabled {
+    color: var(--ddml-color-disabled);
+}
+
+.ddml-state-disabled:after {
+    display: block; width: 0; height: 1.2em; margin: 0 -1px -.6em 0;
+    position: absolute; left: auto !important; right: 50% !important; top: auto !important; bottom: 50% !important;
+    font-size: 1em; content: '' !important;
+    border: 1px solid currentColor; border-radius: 0; outline: 1px solid var(--ddml-text-stroke-color);
+    -webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+}
+
+.ddml-state-disabled:before,
+.ddml-state-disabled:after {
+    color: currentColor !important;
+    animation: none !important;
+}

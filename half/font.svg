@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
+<defs>
+<font id="ddmliconshalf" horiz-adv-x="1000" >
+<font-face font-family="ddmliconshalf" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="circle" unicode="&#xf010;" d="M500-81q-90 0-168 34-79 33-137 92-58 58-92 137-34 78-34 168 0 90 34 168 34 79 92 137 58 59 137 93 78 34 168 34 90 0 168-34 79-34 137-93 59-58 93-137 34-78 34-168 0-90-34-168-34-79-93-137-58-59-137-92-78-34-168-34z m26 83q139 12 231 109 92 97 92 239 0 141-92 238-92 97-231 110z" horiz-adv-x="1000" />
+
+<glyph glyph-name="doplet" unicode="&#xf016;" d="M500-40q144 0 246 99t102 243q0 72-27 135t-75 110l-246 241-246-241q-48-48-75-110-28-63-28-135 0-143 103-242t246-100z m0 83v629l190-188q36-36 56-81 20-46 20-101 0-109-78-184-79-75-188-75z" horiz-adv-x="1000" />
+
+<glyph glyph-name="shield" unicode="&#xf01c;" d="M500-82q-152 38-250 175-98 137-98 301v258l348 130 349-130v-258q0-164-98-301-99-137-251-175z m0 85q107 39 179 134 71 94 84 213h-263v343l-266-99v-200q0-12 1-22 0-9 3-22h262z" horiz-adv-x="1000" />
+
+<glyph glyph-name="star" unicode="&#xf022;" d="M500 539l5-373 148-87-35 175 126 115-176 20z m-279-636l74 318-247 213 325 29 127 300 127-300 325-29-247-213 74-318-279 169z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

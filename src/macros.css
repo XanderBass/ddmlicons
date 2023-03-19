@@ -1,0 +1,14 @@
+.ddml-m-info:after     { content: '\f034'; font-weight: bold; color: var(--ddml-color-notice); }
+.ddml-m-checked:after  { content: '\f032'; font-weight: bold; color: var(--ddml-color-success); }
+.ddml-m-warning:after  { content: '\f05b'; font-weight: bold; color: var(--ddml-color-warning); }
+.ddml-m-error:after    { content: '\f036'; font-weight: bold; color: var(--ddml-color-error); }
+.ddml-m-add:after      { content: '\f031'; font-weight: bold; color: var(--ddml-color-success); }
+.ddml-m-edit:after     { content: '\f073'; font-weight: bold; color: var(--ddml-color-notice); }
+.ddml-m-save:after     { content: '\f074'; font-weight: bold; color: var(--ddml-color-success); }
+.ddml-m-delete:after   { content: '\f075'; font-weight: bold; color: var(--ddml-color-error); }
+.ddml-m-remove:after   { content: '\f076'; font-weight: bold; color: var(--ddml-color-error); }
+.ddml-m-restore:after  { content: '\f077'; font-weight: bold; color: var(--ddml-color-success); }
+.ddml-m-settings:after { content: '\f078'; font-weight: bold; color: var(--ddml-color-notice); }
+.ddml-m-clock:after    { content: '\f02c'; font-weight: bold; color: var(--ddml-color-default); }
+.ddml-m-safe:after     { content: '\f051'; font-weight: bold; color: var(--ddml-color-success); }
+.ddml-m-unsafe:after   { content: '\f054'; font-weight: bold; color: var(--ddml-color-error); }
