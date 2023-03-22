@@ -96,7 +96,7 @@ class Compiler
                 $result[] = implode("\r\n", $icons);
             }
         }
-        foreach (array('ui', 'macros', 'corrections') as $k) {
+        foreach (array('macros', 'ui', 'corrections') as $k) {
             $file = self::path() . $k . '.css';
             if (file_exists($file)) {
                 $file = trim(file_get_contents($file));
